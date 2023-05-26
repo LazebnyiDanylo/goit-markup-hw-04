@@ -89,6 +89,7 @@ img {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -217,6 +218,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  background-color: var(--third-background-color);
+  margin-bottom: 8px;
 }
 
 .advantages-list {
@@ -226,13 +232,6 @@ img {
 
 .advantages-item {
   width: 264px;
-}
-
-.advantages-logo {
-  width: 264px;
-  height: 112px;
-  border-radius: 4px;
-  background-color: var(--third-background-color);
 }
 
 .advantage {
@@ -309,6 +308,10 @@ img {
   background-color: var(--hover-color);
 }
 
+.team-soc-link {
+  fill: var(--third-background-color);
+}
+
 /* -------------CUSTOMERS------------- */
 
 .customers {
@@ -335,20 +338,17 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--first-border-color);
 }
 
-.customers-link:hover {
+.customers-link:hover,
+.customers-link:focus {
   border-color: var(--hover-color);
-}
-
-.customers-link:hover .customers-icon {
-  fill: var(--hover-color);
+  color: var(--hover-color);
 }
 
 .customers-icon {
-  width: 104px;
-  height: 56px;
-  fill: var(--first-border-color);
+  fill: currentColor;
 }
 
 /* -------------PORTFOLIO------------- */
@@ -413,6 +413,7 @@ img {
   color: var(--first-button-color);
   background-color: var(--hover-color);
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* -------------FOOTER------------- */
@@ -426,6 +427,11 @@ img {
 .footer-container {
   display: flex;
   gap: 120px;
+  align-items: baseline;
+}
+
+.footer-descriptions {
+  margin-right: 120px;
 }
 
 .logo-footer-part {
@@ -463,6 +469,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.footer-soc-icon {
+  fill: var(--third-background-color);
 }
 
 .footer-soc-link:hover,
