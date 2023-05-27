@@ -341,14 +341,14 @@ img {
   color: var(--first-border-color);
 }
 
+.customers-icon {
+  fill: currentColor;
+}
+
 .customers-link:hover,
 .customers-link:focus {
   border-color: var(--hover-color);
   color: var(--hover-color);
-}
-
-.customers-icon {
-  fill: currentColor;
 }
 
 /* -------------PORTFOLIO------------- */
